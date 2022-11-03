@@ -59,7 +59,8 @@
 }
 
 .card__image {
-
+height: auto;
+/* object-fit: ; */
 }
 
 
