@@ -49,36 +49,37 @@
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
   }
 
-.card {
+  .card {
     max-width: 900px;
     min-height: 600px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 30px;
     padding: 20px;
-    position: relative;
-}
+  }
 
-.card__image {
-  position: absolute;
-  
- 
-}
+  .card__image {
+    width: 80%;
+    position: relative;
+    top: 100px;
+    left: 30px;
+  }
+
 
 h3 {
-  margin-top: 120px;
-  text-align: center;
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: hsl(238, 29%, 16%);
+    margin-top: 100px;
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: hsl(238, 29%, 16%);
 }
 
 .card__question {
-  margin-top: 20px;
-  font-size: 0.875rem;
-  color: hsl(237, 12%, 33%);
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: hsl(237, 12%, 33%);
 }
 
 .card__answer {
@@ -95,6 +96,7 @@ h3 {
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    padding-bottom: 80px;
 }
 
 .attribution a { 
@@ -122,6 +124,12 @@ body {
   grid-row: 4 / 8;
   grid-column: 3 / 11;
 }
+
+/* .card__image {
+  grid-row: 4 / 8;
+  grid-column: 3 / 11;
+}
+*/
 
 .attribution {
   grid-row: 9 / 10;
