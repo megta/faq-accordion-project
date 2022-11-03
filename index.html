@@ -12,14 +12,15 @@
 </head>
 
 <body>
-  
-  <article class="card card--shadow">
+  <!-- maybe separate into multiple picture elements? put shadow img tgt with the 
+illustration woman img? -->
+  <picture>
+    <source media="(max-width: 799px)" srcset="images/illustration-woman-online-mobile.svg" />
+    <source media="(min-width: 800px)" srcset="images/illustration-woman-online-desktop.svg" />
+    <img class="card__image" src="images/illustration-woman-online-desktop.svg" alt="" aria-hidden="true">
+  </picture>
 
-    <picture class="card__image card__image--big">
-      <source media="(max-width: 799px)" srcset="images/illustration-woman-online-mobile.svg" />
-      <source media="(min-width: 800px)" srcset="images/illustration-woman-online-desktop.svg" />
-      <img class="card__image--fallback" src="images/illustration-woman-online-desktop.svg" alt="" aria-hidden="true">
-    </picture>
+  <article class="card card--shadow">
 
   <h3>FAQ</h3>
   
