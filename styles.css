@@ -62,11 +62,9 @@
 }
 
 .card__image {
-  width: 65%;
-  height: auto;
   position: absolute;
-  bottom: 650px;
-  z-index: 3;
+  
+ 
 }
 
 h3 {
@@ -123,6 +121,11 @@ body {
 .card {
   grid-row: 4 / 8;
   grid-column: 3 / 11;
+}
+
+.attribution {
+  grid-row: 9 / 10;
+  grid-column: 6 / 8;
 }
 
 }
