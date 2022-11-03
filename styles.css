@@ -43,6 +43,20 @@
     max-width: 100%;
   }
 
+  body {
+    font-family: 'Kumbh Sans';
+    font-size: 0.75rem;
+    font-weight: 400;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  }
+
+
+
+
+
+
+
+
   
 
 
