@@ -25,13 +25,6 @@
          url('../fonts/kumbh-sans-v12-latin-700.svg#KumbhSans') format('svg'); /* Legacy iOS */
   }
 
-
-  /*:root {
-    --question-color: hsl(238, 29%, 16%);
-    --answer-color: hsl(237, 12%, 33%);
-  }
-  */
-
   *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -63,7 +56,7 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 20px;
     padding: 20px;
     position: relative;
 }
@@ -74,7 +67,6 @@
   position: absolute;
   bottom: 650px;
   z-index: 3;
-  
 }
 
 h3 {
@@ -111,8 +103,6 @@ h3 {
     color: hsl(228, 45%, 44%); 
 }
 
-
-
 @media (max-width: 799px) {
 body {
   display: flex;
@@ -123,6 +113,16 @@ body {
 }
 
 @media (min-width: 800px) {
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 10px;
+}
 
+.card {
+  grid-row: 4 / 8;
+  grid-column: 3 / 11;
+}
 
 }
