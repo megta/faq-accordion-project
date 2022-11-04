@@ -57,25 +57,28 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 150px 30px 30px 30px;
+    margin: 200px 30px 30px 30px;
     padding: 20px;
     position: relative;
   }
 
   .card__image {
     width: 90%;
-    padding-left: 25px;
-    padding-bottom: 100px;
+    padding: 20px;
+    position: absolute;
+    bottom: 500px;
    
   }
 
   .card__image-bg {
-    width: 100%;
+    width: 90%;
+    padding: 20px;
     position: absolute;
-    bottom: 400px;
+    bottom: 470px;
   }
 
 h3 {
+  margin-top: 100px;
     text-align: center;
     font-size: 1.875rem;
     font-weight: 700;
@@ -114,7 +117,7 @@ left: 260px;
 .attribution { 
     font-size: 11px; 
     text-align: center; 
-    padding-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .attribution a { 
@@ -127,6 +130,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 }
 
