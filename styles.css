@@ -56,13 +56,14 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 30px;
     padding: 20px;
   }
 
   .card__image {
     width: 80%;
-  
+    
 
   }
 
