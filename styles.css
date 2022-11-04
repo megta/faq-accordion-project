@@ -94,18 +94,19 @@ h3 {
     font-size: 0.875rem;
     color: hsl(237, 12%, 33%);
     cursor: pointer;
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .card__question::after {
 content: url(images/icon-arrow-down.svg);
-position: absolute;
-left: 260px;
 }
 
 .card__answer {
   color: hsl(240, 6%, 50%);
 }
+
 
 
 
@@ -124,13 +125,21 @@ left: 260px;
     color: hsl(228, 45%, 44%); 
 }
 
+
+@media (min-width: 449px) and (max-width: 599px) {
+  body {
+    margin-top: 100px;
+  }
+}
+
+
+
 @media (max-width: 599px) {
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 }
 
