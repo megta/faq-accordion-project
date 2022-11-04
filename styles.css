@@ -54,9 +54,7 @@
     min-height: 600px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+   
     margin: 200px 30px 30px 30px;
     padding: 20px;
     position: relative;
@@ -78,7 +76,8 @@
   }
 
 h3 {
-  margin-top: 100px;
+  margin-top: 120px;
+  margin-bottom: 20px;
     text-align: center;
     font-size: 1.875rem;
     font-weight: 700;
@@ -86,7 +85,7 @@ h3 {
 }
 
 .card__question {
-    margin: 20px 0px;
+    
     font-size: 0.875rem;
     color: hsl(237, 12%, 33%);
     cursor: pointer;
@@ -115,13 +114,10 @@ content: url(images/icon-arrow-down.svg);
   overflow: hidden;
 }
 
-.card__gen-container.active .card__answer-container  {
-  height: 150px;
+.card__gen-container.active .card__answer-container {
+  height: 60px;
+  padding-bottom: 10px;
 }
-
-
-
-
 
 .attribution { 
     font-size: 11px; 
