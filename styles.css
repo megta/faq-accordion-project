@@ -62,9 +62,8 @@
 
   .card__image {
     width: 80%;
-    position: relative;
-    top: 100px;
-    left: 30px;
+  
+
   }
 
 
@@ -76,10 +75,22 @@ h3 {
     color: hsl(238, 29%, 16%);
 }
 
+.card__gen-container {
+
+}
+
 .card__question {
     margin-top: 20px;
     font-size: 0.875rem;
     color: hsl(237, 12%, 33%);
+    cursor: pointer;
+    position: relative;
+}
+
+.card__question::after {
+content: url(images/icon-arrow-down.svg);
+position: absolute;
+left: 280px;
 }
 
 .card__answer {
