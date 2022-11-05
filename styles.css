@@ -47,7 +47,13 @@
     font-size: 0.75rem;
     font-weight: 400;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
+  /* change all widths, heights, media query size to rem/em/percentage(if needed) */
 
   .card {
     max-width: 900px;
@@ -55,22 +61,20 @@
     border-radius: 20px; 
     margin: 200px 30px 30px 30px;
     padding: 20px 20px 50px 20px;
-   position: relative;
+    position: relative;
   }
   
-  /* using things like top: -20px; means you wont get the space kept if you use
-  bottom: 20px;  */
+  /* 
+  -using things like top: -20px; means you wont get the space kept if you use
+  bottom: 20px;
+  
+  -use background image for the bg pattern
+  */
 
   .card__image {
     width: 100%;
     padding: 20px;
-   
-  }
-
-  .card__image-bg {
-    width: 100%;
-    padding: 20px;
-   
+    margin-top: -145px;
   }
 
 h3 {
@@ -149,48 +153,48 @@ transition: 0.5s ease;
 }
 
 
+
+
+/* use em for media queries */
 @media (min-width: 449px) and (max-width: 599px) {
   body {
     margin-top: 100px;
   }
 }
 
-@media (max-width: 599px) {
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-}
-
 @media (min-width: 600px) {
+  /*
 body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   gap: 10px;
 }
+*/
 
 .card {
   margin: 30px;
+  padding: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  grid-row: 2 / 12;
+  
+ /* grid-row: 2 / 12;
   grid-column: 3 / 11;
+  */
 }
 
-/* .card__image {
-  grid-row: 4 / 8;
-  grid-column: 3 / 11;
+.card__image {
+  width: 100%;
+  padding: 0;
+  margin-top: 0;
 }
-*/
 
+/*
 .attribution {
   grid-row: 9 / 10;
   grid-column: 6 / 8;
 }
+*/
 
 }
 
