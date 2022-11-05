@@ -60,10 +60,9 @@
   }
 
   .card__image {
-    width: 80%;
+    width: 100%;
     padding: 20px;
-    position: fixed;
-
+   
   }
 
   .card__image-bg {
