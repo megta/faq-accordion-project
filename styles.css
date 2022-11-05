@@ -53,30 +53,27 @@
     max-width: 900px;
     min-height: auto;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 20px;
-   
+    border-radius: 20px; 
     margin: 200px 30px 30px 30px;
     padding: 20px 20px 50px 20px;
-    position: relative;
+   position: relative;
   }
 
   .card__image {
-    width: 90%;
+    width: 100%;
     padding: 20px;
-    position: absolute;
-    bottom: 400px;
-   
+    position: fixed;
+
   }
 
   .card__image-bg {
-    width: 90%;
+    width: 100%;
     padding: 20px;
-    position: absolute;
-    bottom: 370px;
+   
   }
 
 h3 {
-  margin-top: 120px;
+  margin-top: 50px;
   margin-bottom: 20px;
     text-align: center;
     font-size: 1.875rem;
@@ -175,6 +172,10 @@ body {
 }
 
 .card {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   grid-row: 4 / 8;
   grid-column: 3 / 11;
 }
