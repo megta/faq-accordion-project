@@ -174,9 +174,9 @@ body {
 .card {
   margin: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  grid-row: 4 / 8;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-row: 2 / 12;
   grid-column: 3 / 11;
 }
 
