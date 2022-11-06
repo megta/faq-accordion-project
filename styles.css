@@ -63,30 +63,22 @@
     background-image: url(images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 70%;
+    background-size: 14rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  
-  /* 
-  -using things like top: -20px; means you wont get the space kept if you use
-  bottom: 20px;
-  
-  -use background image for the bg pattern
-  */
 
   .card__image-container {
     width: 100%;
-    max-width: 15rem;
+    max-width: 14rem;
     height: auto;
-    
+    margin-top: -125px;
   }
 
-h3 {
-  margin-top: 100px;
-  margin-bottom: 20px;
+  h3 {
+    margin-top: 60px;
     text-align: center;
     font-size: 1.875rem;
     font-weight: 700;
@@ -100,6 +92,7 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    transition: 0.5s ease-in-out;
 }
 
 .card__question::after {
@@ -114,16 +107,35 @@ transition: 0.5s ease;
 .card__answer {
   color: hsl(240, 6%, 50%);
   line-height: 1.5;
+  width: 100%;
+  max-width: 90%;
 }
+
+/* does gen container need a width and height?  */
 
 .card__gen-container {
   margin-top: 20px;
 }
 
+/* 
+-[SOLVED]when height was used, the answer container jerked while closing but 
+max-height fixed it. now the container jerks slightly when container is opening.
+this is fixed by getting rid of display flex on the active card ans container.
+
+- check if transition is put in the right elements.
+*/
+
+/* 
+-why does the ans container open and expand card to the top instead
+of expanding to the bottom?
+-try adjusting height of .card__faq
+*/
+
 .card__answer-container {
   border-bottom: 1px solid hsl(240, 5%, 91%);
   width: 100%;
-  height: 0px;
+  max-width: 100%;
+  max-height: 0px;
   transition: 0.5s ease-in-out;
   margin-top: 20px;
   overflow: hidden;
@@ -132,22 +144,18 @@ transition: 0.5s ease;
 .card__gen-container.active .card__question::after {
   transform: rotate(180deg);
   transition: transform 0.5s ease;
-  
 }
 
 .card__gen-container.active .card__answer-container {
-  height: 90px;
+  max-height: 90px;
   padding: 15px 0px;
   margin-top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   transition: 0.5s ease-in-out;
 }
 
 .card__gen-container.active .card__question {
   font-weight: 700;
-  
+  transition: 0.5s ease-in-out;
 }
 
 .attribution { 
@@ -160,10 +168,11 @@ transition: 0.5s ease;
     color: hsl(228, 45%, 44%); 
 }
 
-
+/* play around and see how accordion is affected by the grid and if cannot
+use it, then just flexbox and use body to center the accordion */
 
 @media (min-width: 800px) {
-  /*
+/*
 body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -181,12 +190,6 @@ body {
  /* grid-row: 2 / 12;
   grid-column: 3 / 11;
   */
-}
-
-.card__image {
-  width: 100%;
-  padding: 0;
-  margin-top: 0;
 }
 
 /*
