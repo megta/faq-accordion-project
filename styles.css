@@ -39,7 +39,7 @@
 
   img, picture, video, canvas, svg {
     display: block;
-    max-width: 100%;
+    
   }
 
   body {
@@ -56,12 +56,15 @@
   /* change all widths, heights, media query size to rem/em/percentage(if needed) */
 
   .card {
-    max-width: 900px;
+    max-width: 56.25rem;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px; 
     margin: 30px;
     padding: 20px 20px 50px 20px;
-    position: relative;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 70%;
   }
   
   /* 
@@ -73,12 +76,13 @@
 
   .card__image {
     width: 100%;
-    padding: 20px;
-    margin-top: -145px;
+    height: auto;
+    max-width: 80%;
+    
   }
 
 h3 {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 20px;
     text-align: center;
     font-size: 1.875rem;
@@ -140,6 +144,7 @@ transition: 0.5s ease;
 
 .card__gen-container.active .card__question {
   font-weight: 700;
+  
 }
 
 .attribution { 
