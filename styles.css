@@ -77,6 +77,10 @@
     margin-top: -125px;
   }
 
+  .card__image-box {
+    display: none;
+  }
+
   .card__faq {
     margin-top: 80px;
   }
@@ -172,16 +176,25 @@ this is fixed by getting rid of display flex on the active card ans container.
   justify-content: space-between;
   background-image: url(images/bg-pattern-desktop.svg);
   background-repeat: no-repeat;
-  background-position: -120% 50%;
+  background-position: -320px;
   background-size: 40rem;
-
 }
 
-
 .card__image-container {
-  /* margin-left: -100px; */
+  margin-left: -70px;
   margin-top: 0px;
+  max-width: 25rem;
+}
 
+.card__image {
+  width: 100%;
+  object-position: -65px 0px;
+}
+
+.card__image-box {
+  display: block;
+  width: 100%;
+  max-width: 8rem;
 }
 
 .card__faq {
