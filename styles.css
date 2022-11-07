@@ -49,7 +49,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
   /* change all widths, heights, media query size to rem/em/percentage(if needed) */
@@ -68,6 +67,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
 
   .card__image-container {
@@ -83,6 +83,8 @@
 
   .card__faq {
     margin-top: 80px;
+    width: 100%;
+    max-width: 100%;
   }
 
   h3 {
@@ -167,7 +169,11 @@ this is fixed by getting rid of display flex on the active card ans container.
     color: hsl(228, 45%, 44%); 
 }
 
-@media (min-width: 50em) {
+@media (min-width: 62.5em) {
+
+body {
+  align-items: center;
+}
 
 .card {
   padding: 70px;
@@ -178,23 +184,29 @@ this is fixed by getting rid of display flex on the active card ans container.
   background-repeat: no-repeat;
   background-position: -320px;
   background-size: 40rem;
+  position: relative;
 }
 
 .card__image-container {
-  margin-left: -70px;
-  margin-top: 0px;
-  max-width: 25rem;
+ /* transform: translate(-70px, 0px); */
+  margin-top: 0;
+  position: absolute;
+  max-width: 24rem;
+  right: 516px;
 }
 
 .card__image {
   width: 100%;
-  object-position: -65px 0px;
+  object-position: -50px 0px;
 }
 
 .card__image-box {
   display: block;
   width: 100%;
   max-width: 8rem;
+  /* margin-left: -150px; */
+  transform: translate(-150px, 30px);
+  z-index: 1;
 }
 
 .card__faq {
