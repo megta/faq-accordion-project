@@ -49,6 +49,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   /* change all widths, heights, media query size to rem/em/percentage(if needed) */
@@ -113,8 +114,6 @@ transition: 0.5s ease;
   max-width: 90%;
 }
 
-/* does gen container need a width and height?  */
-
 .card__gen-container {
   margin-top: 20px;
 }
@@ -125,12 +124,6 @@ max-height fixed it. now the container jerks slightly when container is opening.
 this is fixed by getting rid of display flex on the active card ans container.
 
 - check if transition is put in the right elements.
-*/
-
-/* 
--why does the ans container open and expand card to the top instead
-of expanding to the bottom?
--try adjusting height of .card__faq
 */
 
 .card__answer-container {
@@ -170,25 +163,10 @@ of expanding to the bottom?
     color: hsl(228, 45%, 44%); 
 }
 
-/* play around and see how accordion is affected by the grid and if cannot
-use it, then just flexbox and use body to center the accordion */
-
 @media (min-width: 50em) {
 
-/*
-body {
-  
-  
-  
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  gap: 10px;
-}
-*/
-
 .card {
-  padding: 50px;
+  padding: 70px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -197,16 +175,14 @@ body {
   background-position: -120% 50%;
   background-size: 40rem;
 
- /* grid-row: 2 / 12;
-  grid-column: 3 / 11;
-  */
 }
 
-/*
+
 .card__image-container {
+  /* margin-left: -100px; */
+  margin-top: 0px;
 
 }
-*/
 
 .card__faq {
   margin-top: 0;
@@ -214,13 +190,9 @@ body {
   max-width: 50%;
 }
 
-
-/*
-.attribution {
-  grid-row: 9 / 10;
-  grid-column: 6 / 8;
+h3 {
+text-align: left;
 }
-*/
 
 }
 
