@@ -46,11 +46,9 @@
     font-size: 0.75rem;
     font-weight: 400;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; */
-    margin-top: 120px;
   }
 
   /* change all widths, heights, media query size to rem/em/percentage(if needed) */
@@ -78,8 +76,11 @@
     margin-top: -125px;
   }
 
+  .card__faq {
+    margin-top: 80px;
+  }
+
   h3 {
-    margin-top: 60px;
     text-align: center;
     font-size: 1.875rem;
     font-weight: 700;
@@ -162,7 +163,7 @@ of expanding to the bottom?
 .attribution { 
     font-size: 11px; 
     text-align: center; 
-    margin-top: -10px;
+    margin-top: -15px;
 }
 
 .attribution a { 
@@ -174,15 +175,17 @@ use it, then just flexbox and use body to center the accordion */
 
 @media (min-width: 50em) {
 
+/*
 body {
   
   
   
-  /* display: grid;
+  display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  gap: 10px; */
+  gap: 10px;
 }
+*/
 
 .card {
   padding: 50px;
@@ -199,20 +202,17 @@ body {
   */
 }
 
+/*
 .card__image-container {
 
 }
-
-h3 {
-  margin-top: 0;
-}
+*/
 
 .card__faq {
+  margin-top: 0;
   width: 100%;
   max-width: 50%;
 }
-
-
 
 
 /*
