@@ -1,6 +1,6 @@
 'use strict';
 
-// why loop on .card__gen-container instead of .card__question?
+// make accordion items open one at a time
 
 
 const accordion = document.querySelectorAll('.card__gen-container');
