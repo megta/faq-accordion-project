@@ -46,10 +46,11 @@
     font-size: 0.75rem;
     font-weight: 400;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    margin-top: 120px;
   }
 
   /* change all widths, heights, media query size to rem/em/percentage(if needed) */
@@ -171,26 +172,48 @@ of expanding to the bottom?
 /* play around and see how accordion is affected by the grid and if cannot
 use it, then just flexbox and use body to center the accordion */
 
-@media (min-width: 800px) {
-/*
+@media (min-width: 50em) {
+
 body {
-  display: grid;
+  
+  
+  
+  /* display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  gap: 10px;
+  gap: 10px; */
 }
-*/
 
 .card {
-  margin: 30px;
   padding: 50px;
   display: flex;
   flex-direction: row;
-  
+  justify-content: space-between;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: -120% 50%;
+  background-size: 40rem;
+
  /* grid-row: 2 / 12;
   grid-column: 3 / 11;
   */
 }
+
+.card__image-container {
+
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.card__faq {
+  width: 100%;
+  max-width: 50%;
+}
+
+
+
 
 /*
 .attribution {
