@@ -124,14 +124,6 @@ transition: 0.5s ease;
   margin-top: 20px;
 }
 
-/* 
--[SOLVED]when height was used, the answer container jerked while closing but 
-max-height fixed it. now the container jerks slightly when container is opening.
-this is fixed by getting rid of display flex on the active card ans container.
-
-- check if transition is put in the right elements.
-*/
-
 .card__answer-container {
   border-bottom: 1px solid hsl(240, 5%, 91%);
   width: 100%;
@@ -141,6 +133,8 @@ this is fixed by getting rid of display flex on the active card ans container.
   margin-top: 20px;
   overflow: hidden;
 }
+
+/* active class */
 
 .card__gen-container.active .card__question::after {
   transform: rotate(180deg);
@@ -168,6 +162,9 @@ this is fixed by getting rid of display flex on the active card ans container.
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+
+/*media query */
 
 @media (min-width: 62.5em) {
 
