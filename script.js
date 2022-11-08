@@ -12,9 +12,10 @@ item.addEventListener('click', function() {
     accordion.forEach((elem) => {
         if(elem.classList.contains('active')) {
             elem.classList.remove('active');
-            
+            elem.ariaExpanded = 'false';
         } else if (elem === item) {
             elem.classList.add('active');
+            elem.ariaExpanded = 'true';
         }
     });
 });
